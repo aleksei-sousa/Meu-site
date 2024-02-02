@@ -1,0 +1,158 @@
+.container-sobre-mim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--claro);
+    padding: 160px 0px;
+}
+.sobre-mim{
+    overflow: hidden;
+    background-color: var(--claro);
+    max-width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 21px;
+}
+.foto-apontando {
+    max-width: 350px;
+    width: 100%;
+    background-color: var(--cor-destaque);
+    border: 14px solid var(--cor-destaque);
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%; 
+}
+.img_foto{
+    width: 91%;
+    margin-top: 42px;
+    margin-left: 16px;
+}
+.habilidades{
+    width: 48%;
+}
+#hab1{
+    width: 87%;
+}
+#hab2{
+    width: 95%;
+}
+#hab3{
+    width: 90%;
+}
+#hab4{
+    width: 93%;
+}
+.sobre{
+    color: var(--cor-destaque);
+    font-family: 'PT Sans', sans-serif;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+.subtitulo{
+    color: black;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left; 
+}
+.subtitulo-align-left{
+    text-align: left;
+    line-height: 30px;
+}
+.subtitulo-align-center{
+    text-align: center;
+}
+.sub1::after{
+    content: "";
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    height: 5px;
+    background-color: var(--cor-destaque);
+    margin-top: 4px;
+    border-radius: 50px;
+}
+.descrevendo-me{
+    font-family: 'Roboto';
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 21px;
+}
+.habilidade{
+    padding: 7px 0;
+    position: relative;
+}
+.container-niveis{
+    padding: 17px 25px;
+    background-color: #dae5f3;
+    border-radius: 17px;
+    margin-top: 26px;
+}
+.niveis{
+    overflow: hidden;
+    padding-top: 17px;
+}
+.nome-habilidade{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    font-size: 16px;
+    color: #464646;
+    top: -6px;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0;
+}
+.barra-verde{
+    height: 5px;
+    width: 100%;
+    background-color: var(--cor-destaque);
+}
+.barra-btn{
+    height: 18px;
+    width: 2%;
+    border: 3px solid var(--cor-destaque);
+    border-radius: 25px;
+    cursor: not-allowed;
+    background-color: var(--claro);
+}
+.barra-ativa{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+.barra-cinza{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(167, 167, 167);
+    position: absolute;
+}
+@media screen and (max-width:790px) {
+    .habilidades{
+        width: 100%;
+    }
+    .subtitulo{
+        align-items: end; display: flex; flex-direction: column;
+    }
+    .escolha-me{
+        align-items: end; display: flex; flex-direction: column; 
+    }
+    .sobre-mim{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

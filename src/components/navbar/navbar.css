@@ -1,0 +1,12 @@
+.main{
+    filter: brightness(0.8);
+}
+@media screen and (max-width:790px) {
+    
+    .content_h{
+        padding: 0px 9px;
+    }
+    .content_h_ativo{
+
+    }
+}

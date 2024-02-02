@@ -1,0 +1,104 @@
+.gradient_container{
+    border-radius: 19px;
+    background-color: white;
+    overflow: hidden;
+    margin: 13px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    justify-content: space-evenly;
+}
+.anc_img{
+    position: absolute;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    color: initial;
+    background: azure;
+    padding: 2px;
+}
+.icone_link{
+
+}
+.container_img{
+    /* min-height: 273px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #abffea;
+}
+.cards_projeto{
+    width: 100%;
+    height: 65%;
+}
+.projeto_descricao {
+    background-color: white;
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nome_projeto{
+    background-color: #98aeff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    width: fit-content;
+    padding: 0 10px;
+    
+}
+.desc_projeto{
+    font-family: 'roboto', sans-serif;
+    color: rgb(95, 95, 95);
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    margin: 9px 0;
+}
+.credito_projeto{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.eu{
+    color: white;
+    background-color: var(--cor-destaque);
+    padding: 2px;
+    margin-right: 3px;
+
+}
+.ling_credito_projeto{
+    color: black;
+    border-top: 2px solid var(--cor-destaque);
+    border-bottom: 2px solid var(--cor-destaque);
+}
+@media screen and (max-width: 1200px) {
+    .gradient_container{
+        min-height: 80%;
+    }
+}
+@media screen and (max-width:900px) {
+    .nome_projeto{
+        font-size: 20px;
+    }
+    .projeto_descricao{
+        margin-top: 13px;
+    }
+    .desc_projeto{
+        margin: 6px 0;
+        font-size: 13px;
+    }
+    .gradient_container{
+        padding: 20px;
+    }
+    .ling_credito_projeto{
+        font-size: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,109 @@
+.tecnologias_container{
+    background-color: var(--claro);
+}
+.tecnologias_content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 150px 30px;
+}
+.titulo{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-family: 'Archivo Black';   
+}
+.tecnologias_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ffd2d2;
+    padding: 25px 0;
+    border-radius: 41px;
+}
+.exibicao_cards{
+    max-width: 453px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.container_caixa{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.caixa_vars{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    justify-content: space-between;
+    top: 4%;
+    right: 9px;
+    height: 75px;
+    align-items: center;
+}
+.caixa_texto{
+    color: white;
+    width: 54%;
+    text-align: center;
+    font-family: 'Odor Mean Chey', serif;
+    margin: auto;
+    font-size: 41px;
+}
+.caixa_background{
+    width: 100%;
+}
+.caixa_icone{
+    width: 49px;
+    height: 49px;
+    padding-left: 16px;
+}
+.descricao_card{
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: end;
+    background-color: #703921;
+    padding: 26px;
+    border-radius: 52px 0px 52px 0px;
+    width: 78%;
+    box-shadow: 7px 7px 6px #977373;
+}
+
+
+@media screen and (max-width:960px) {
+    .tecnologias_cards{
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+    }
+    .container_card {
+        width: 100%;
+
+    }
+    .exibicao_cards{
+        margin-top: 30px;
+        max-width: 350px;
+        display: none;
+    }
+    .descricao_card{
+        display: none;
+    }
+    .caixa_vars{
+        height: 60px;
+    }
+    .caixa_texto{
+        font-size: 32px;
+    }
+    .caixa_icone{
+        width: 35px;
+        height: 35px;
+        padding-left: 16px;
+    }
+}
