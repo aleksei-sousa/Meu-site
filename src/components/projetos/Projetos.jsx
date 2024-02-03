@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import './projetos.css'
+import styles from './projetos.module.css'
 import Cards from './cards_projetos/Cards'
 
 import img_1 from './img/img_calc.png';
@@ -32,20 +32,20 @@ const responsiveSettings = [
 export default function Projetos () {
 
     return(
-        <div className="container_projetos" id='projetos'>
-            <div className="subtitulo_central">
-              <h1 className='texto_sub sub2'>Projetos</h1>
+        <div className={styles.container_projetos} id='projetos'>
+            <div className={styles.subtitulo_central}>
+              <h1 className={`${styles.texto_sub} ${styles.sub2}`}>Projetos</h1>
             </div>
-            <div className="destaque_projetos">
-                <div className='content_projetos'>
-                    <Slide slidesToShow={1} slidesToScroll={1} arrows={false} autoplay={false} indicators={true} transitionDuration={700} duration={2000}  responsive={responsiveSettings}>
+            <div className={styles.destaque_projetos}>
+                <div className={styles.content_projetos}>
+                    <Slide slidesToShow={1} slidesToScroll={1} arrows={false} autoplay={true} indicators={true} transitionDuration={700} duration={2000}  responsive={responsiveSettings}>
                       <Cards
                           id ={'calc'}
                           src = {img_1}
                           alt ={"imagem de uma calculadora feita em Javascript"}
                           nomeProjeto={'Calculadora'}
                           descricaoProjeto={'Uma calculadora com todas as funcionalidades de uma do Android'}
-                          link={'https://www.google.com.br/'}
+                          link={'https://aleksei-sousa.github.io/calculadora/'}
                           linguagens={'Design-Html-Css-js'}
                       />
                       <Cards
@@ -54,8 +54,8 @@ export default function Projetos () {
                           alt ={"imagem com algumas partes do site da Netflix feito por mim"}
                           nomeProjeto={'Netflix - clone'}
                           descricaoProjeto={'um site clone, com todo design e responsividade do original'}
+                          link={'https://aleksei-sousa.github.io/Netflix_clone/'}
                           linguagens={'React.JS'}
-                          link={'https://www.google.com.br/'}
                       />
                       <Cards
                           id ={'form'}
@@ -63,7 +63,7 @@ export default function Projetos () {
                           alt ={"Gif da animação do formulário, com opção de Login e Cadastrar"}
                           nomeProjeto={'Formulário'}
                           descricaoProjeto={'Formulário React.js com uma animação'}
-                          link={'https://www.google.com.br/'}
+                          link={'https://aleksei-sousa.github.io/formulario_react/'}
                           linguagens={'React.JS'}
                       />
                       <Cards
@@ -97,6 +97,7 @@ export default function Projetos () {
                           nomeProjeto={'Backend de Login'}
                           descricaoProjeto={'sistema de cadastro, login e autenticação'}
                           linguagens={'Node.JS-MongoDb-Express'}
+                          link={'https://github.com/aleksei-sousa/sistema-de-login'}
                       />
                     </Slide>
                 </div>

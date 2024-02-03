@@ -1,4 +1,4 @@
-import './GridCard.css'
+import styles from './GridCard.module.css'
 
 
 // import react from './img/react_icone.png'
@@ -31,9 +31,9 @@ import api from './img/api.png'
 export default function GridCard ({setTexto, setIcone}) {
 
     const mostrarIcones = (e) => {
-      //console.log(e.target)
-      let elemento = ''
-      if(e.target.className == 'content_card'){
+      const filhos = e.target.children.length
+      let elemento
+      if(filhos != 0){
         elemento = e.target.children[0]
       }else {
         elemento = e.target
@@ -50,105 +50,104 @@ export default function GridCard ({setTexto, setIcone}) {
     }
 
     return(
-        <div className="container_card">
+        <div className={styles.container_card}>
 
-          <div className="content_card"
-            onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='React js'
-              className="icone"
+              className={styles.icone}
               src={react}
             />
-            <p className='nome_icone'>React</p>
+            <p className={styles.nome_icone_cards}>React</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Node js'
-              className="icone"
+              className={styles.icone}
               src={nodejs} 
             />
-            <p className='nome_icone'>Node Js</p>
+            <p className={styles.nome_icone_cards}>Node Js</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Javascript'
-              className="icone"
+              className={styles.icone}
               src={js} 
             />
-            <p className='nome_icone'>Javascript</p>
+            <p className={styles.nome_icone_cards}>Javascript</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Mysql'
-              className="icone_p" 
+              className={styles.icone_p} 
               src={mysql}
             />
-            <p className='nome_icone'>Mysql</p>
+            <p className={styles.nome_icone_cards}>Mysql</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Mongo db'
-              className="icone_g"
+              className={styles.icone_g}
               src={mongodb}
             />
-            <p className='nome_icone'>Mongo DB</p>
+            <p className={styles.nome_icone_cards}>Mongo DB</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Api Rest'
-              className="icone"
+              className={styles.icone}
               src={api}
             />
-            <p className='nome_icone'>Api</p>
+            <p className={styles.nome_icone_cards}>Api</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Html'
-              className="icone_m"
+              className={styles.icone_m}
               src={html}
             />
-            <p className='nome_icone'>Html</p>
+            <p className={styles.nome_icone_cards}>Html</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img 
               id='Css'
-              className="icone_m"
+              className={styles.icone_m}
               src={css}
             />
-            <p className='nome_icone'>Css</p>
+            <p className={styles.nome_icone_cards}>Css</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Figma'
-              className="icone_m"
+              className={styles.icone_m}
               src={figma} />
-            <p className='nome_icone'>Figma</p>
+            <p className={styles.nome_icone_cards}>Figma</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='Photoshop'
-              className="icone"
+              className={styles.icone}
               src={ps}
             />
-            <p className='nome_icone'>Photoshop</p>
+            <p className={styles.nome_icone_cards}>Photoshop</p>
           </div>
 
-          <div className="content_card" onClick={(e)=>mostrarIcones(e)}>
+          <div className={styles.content_card} onClick={(e)=>mostrarIcones(e)}>
             <img
               id='CorelDraw'
-              className="icone"
+              className={styles.icone}
               src={corel}
             />
-            <p className='nome_icone'>Coreldraw</p>
+            <p className={styles.nome_icone_cards}>Coreldraw</p>
           </div>
 
         </div>

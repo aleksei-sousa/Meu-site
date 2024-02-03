@@ -1,3 +1,7 @@
+.link_lista{
+    margin: 10px;
+}
+
 .tecnologias_container{
     background-color: var(--claro);
 }
@@ -17,8 +21,8 @@
     flex-direction: row;
     justify-content: space-between;
     background: #ffd2d2;
-    padding: 25px 0;
     border-radius: 41px;
+    padding: 32px 15px;
 }
 .exibicao_cards{
     max-width: 453px;
@@ -75,7 +79,53 @@
     width: 78%;
     box-shadow: 7px 7px 6px #977373;
 }
+.subtitulo_central{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+.texto_sub{
+    color: black;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .sub2::after{
+    content: "";
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor-destaque);
+    margin-top: -5px;
+    border-radius: 50px;
+    align-items: center;
+  }
+  
+  .sub2::before{
+    content: "";
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor-destaque);
+    margin-bottom: -2px;
+    border-radius: 50px;
+    align-items: center;
+  }
 
+@media screen and (max-width:1100px) {
+    .tecnologias_cards{
+        padding: 0;
+    }
+
+    
+}
 
 @media screen and (max-width:960px) {
     .tecnologias_cards{

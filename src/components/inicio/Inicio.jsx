@@ -11,9 +11,9 @@ export default function Inicio () {
 
               <div className={styles.ola}>Olá, meu nome é</div>
               <div className={styles.meu_nome}><h1>Aleksei Sousa</h1></div>
-              <div className={styles.desenvolvedor}><h2>Desenvolvedor Front-End / Designer</h2></div>
-              <div className={styles.auto_descricao}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae molestias excepturi a eius.</p></div>
-              <div className={styles.btn_mais}>mais</div>
+              <div className={styles.desenvolvedor}><h2>Desenvolvedor Front-End</h2></div>
+              <div className={styles.auto_descricao}><p>Desenvolvedor React js e Node Js, com conhecimento em Design gráfico.</p></div>
+              <a href="#sobre-mim" className={styles.btn_mais}>mais</a>
               
             </div>
           </div>

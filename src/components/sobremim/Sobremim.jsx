@@ -12,11 +12,11 @@ export default function SobreMim () {
                         <div className="sobre">Sobre mim</div>
                         <div className="subtitulo subtitulo-align-left sub1">Porque você deve me escolher!</div>
                   </div>
-                    <div className="descrevendo-me">Olá, meu nome é Aleksei Sousa, 23 anos, sou programador <b>Front End</b> e <b>designer</b> freelancer. Busco as melhores soluções no mundo digital. Minhas maiores qualidades profissionais:</div>
+                    <div className="descrevendo-me">Olá, meu nome é Aleksei Sousa, 24 anos, sou programador <b>Front End</b> e <b>designer</b>. Sou encantado pela área de tecnologia, e me encontrei na área da programação:</div>
                     <div className="container-niveis">
                         <div className="niveis">
                             <div className="habilidade">
-                                <div className="nome-habilidade">Respeitar prazos</div>
+                                <div className="nome-habilidade">Compromisso</div>
                                 <div className="barra">
                                     <div className="barra-ativa" id="hab1">
                                         <div className="barra-verde"></div>

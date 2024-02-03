@@ -37,6 +37,7 @@
     position: absolute;
     left: 64%;
     bottom: -87px;
+    transition: .2s;
 }
 
 .content_apresentacao{
@@ -50,7 +51,7 @@
 }
 .meu_nome h1{
     font-family: 'Archivo Black', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
 }
 .desenvolvedor h2{
@@ -81,12 +82,15 @@
     transition: .7s;
 }
 @media screen and (max-width:790px) {
+    .meu_nome h1{
+        font-size: 30px;
+    }
     .texto_apresentacao{
-        margin-top: 540px;
         transition: .3s;
+        margin-top: 446px;
     }
     .container_hidden{
-        height: 800px;
+        /* height: 800px; */
     }
     .white_cuble{
         width: 1053px;
@@ -95,19 +99,16 @@
         left: 40%;
         transform: translateX(-93%) rotate(63deg);
     }
-
-}
-@media screen and (max-width:640px){
-    /* .white_cuble{
-        transform: translateX(-93%) rotate(52deg);
-        height: 1350px;
-        transition: .3s;
-    } */
-}
-
-@media screen and (max-width: 790px) {
     .minha_foto{
         left: 48%;
         bottom: -11px;
+        bottom: -59px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:500px){
+    .minha_foto{
+        left: 22%;
+        transition: .2s;
     }
 }
