@@ -61,7 +61,7 @@
 }
 .auto_descricao p{
     font-family: 'PT Sans', sans-serif;
-    margin: 5px 0px;
+    margin: 5px 44px 0 0;
 }
 .btn_mais{
     background-color: var(--cor-destaque);

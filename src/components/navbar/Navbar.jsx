@@ -15,6 +15,7 @@ import '../locais/i18n'
 export default function Navbar ({navbar, sidebar, setSidebar}) {
 
 const [selecti, setSelecti] = useState('')
+const [tr, setTr] = useState('en')
 const { t, i18n} = useTranslation()
 
 //i18n.changeLanguage('pt')
@@ -29,7 +30,7 @@ function side () {
 function idiomaChange (e) {
   const valor = e.value
   console.log(valor)
-  //setIdioma(valor)
+  setTr(valor)
   i18n.changeLanguage(valor)
 }
 
@@ -80,7 +81,7 @@ function teste2 (e) {
           <li>
           <div className={`${styles.c_select} ${styles.c_select3}`}>
                 <MdOutlineTranslate color='black' className={styles.translate_icon}/>
-              <select className={`${styles.select} ${styles.c_select3}`} onChange={(e)=>teste2(e.target)}>
+              <select className={`${styles.select} ${styles.c_select3}`} onChange={(e)=>teste2(e.target)} value={tr}>
                 <option value="en">En</option>
                 <option value="pt">PT</option>
               </select>
@@ -98,15 +99,15 @@ function teste2 (e) {
           <a href='#inicio' className={!navbar? `${styles.logo_ativo} ${styles.logo}` : `${styles.logo_desativo} ${styles.logo}` }>{t('developer')}</a>
 
 
-          <div className={`${selecti} ${styles.c_select} ${styles.c_select_appear}`}>
+          {/* <div className={`${selecti} ${styles.c_select} ${styles.c_select_appear}`}>
               <MdOutlineTranslate className={styles.translate_icon} color='white'/>
-              <select className={styles.select} /*onChange={(e)=>{teste(e.target)}}*/
+              <select className={styles.select} value={tr}
                 onChange={(e)=>teste2(e.target)}
               >
                 <option value="en">En</option>
                 <option value="pt">PT</option>
               </select>
-            </div>
+            </div> */}
 
 
           <button onClick={side} className={styles.menu_hamburguer1}>
@@ -128,7 +129,7 @@ function teste2 (e) {
             <li><a className={styles.link} href="#tecnologias" onClick={side}>{t('technologies')}</a></li>
             <li><div className={styles.c_select}>
                 <MdOutlineTranslate className={styles.translate_icon}/>
-              <select className={styles.select} onChange={(e)=>{idiomaChange(e.target)}}>
+              <select className={styles.select} onChange={(e)=>teste2(e.target)} value={tr}>
                 <option value="en">En</option>
                 <option value="pt">PT</option>
               </select>
