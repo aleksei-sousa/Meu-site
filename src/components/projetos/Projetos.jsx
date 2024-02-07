@@ -4,6 +4,9 @@ import 'react-slideshow-image/dist/styles.css';
 import styles from './projetos.module.css'
 import Cards from './cards_projetos/Cards'
 
+import { useTranslation } from 'react-i18next';
+import '../locais/i18n'
+
 import img_1 from './img/img_calc.png';
 import img_2 from './img/img_netflix.png';
 import img_3 from './img/gif_form.gif';
@@ -31,10 +34,12 @@ const responsiveSettings = [
 
 export default function Projetos () {
 
+    const { t } = useTranslation()
+
     return(
         <div className={styles.container_projetos} id='projetos'>
             <div className={styles.subtitulo_central}>
-              <h1 className={`${styles.texto_sub} ${styles.sub2}`}>Projetos</h1>
+              <h1 className={`${styles.texto_sub} ${styles.sub2}`}>{t('projectsT')}</h1>
             </div>
             <div className={styles.destaque_projetos}>
                 <div className={styles.content_projetos}>
@@ -43,8 +48,8 @@ export default function Projetos () {
                           id ={'calc'}
                           src = {img_1}
                           alt ={"imagem de uma calculadora feita em Javascript"}
-                          nomeProjeto={'Calculadora'}
-                          descricaoProjeto={'Uma calculadora com todas as funcionalidades de uma do Android'}
+                          nomeProjeto={t('calculator')}
+                          descricaoProjeto={t('calD')}
                           link={'https://aleksei-sousa.github.io/calculadora/'}
                           linguagens={'Design-Html-Css-js'}
                       />
@@ -53,7 +58,7 @@ export default function Projetos () {
                           src = {img_2}
                           alt ={"imagem com algumas partes do site da Netflix feito por mim"}
                           nomeProjeto={'Netflix - clone'}
-                          descricaoProjeto={'um site clone, com todo design e responsividade do original'}
+                          descricaoProjeto={t('netD')}
                           link={'https://aleksei-sousa.github.io/Netflix_clone/'}
                           linguagens={'React.JS'}
                       />
@@ -61,8 +66,8 @@ export default function Projetos () {
                           id ={'form'}
                           src = {img_3}
                           alt ={"Gif da animação do formulário, com opção de Login e Cadastrar"}
-                          nomeProjeto={'Formulário'}
-                          descricaoProjeto={'Formulário React.js com uma animação'}
+                          nomeProjeto={t('form')}
+                          descricaoProjeto={t('forD')}
                           link={'https://aleksei-sousa.github.io/formulario_react/'}
                           linguagens={'React.JS'}
                       />
@@ -70,8 +75,8 @@ export default function Projetos () {
                           id ={'meu_site'}
                           src = {img_4}
                           alt ={"Imagem com recortes do meu site"}
-                          nomeProjeto={'Meu site'}
-                          descricaoProjeto={'Refiz meu site, resolvi refazer em React.js'}
+                          nomeProjeto={t('meusite')}
+                          descricaoProjeto={t('meuD')}
                           linguagens={'React.JS'}
                       />
                       <Cards
@@ -79,7 +84,7 @@ export default function Projetos () {
                           src = {img_5}
                           alt ={"Imagem com recortes do me site"}
                           nomeProjeto={'Landing Page'}
-                          descricaoProjeto={'Meu primerio Projeto, ainda em HTML e CSS'}
+                          descricaoProjeto={t('lanD')}
                           linguagens={'Html-Css-Jquery'}
                       />
                       <Cards
@@ -87,15 +92,15 @@ export default function Projetos () {
                           src = {img_6}
                           alt ={"link e imagem de uma calculadora feita em Javascript"}
                           nomeProjeto={'Price Grid'}
-                          descricaoProjeto={'No meu início, queria entender o display Grid '}
+                          descricaoProjeto={t('priD')}
                           linguagens={'Html-Css-Javascript'}
                       />
                       <Cards
                           id ={'sistema_de_login'}
                           src = {img_7}
                           alt ={"link e imagem de uma calculadora feita em Javascript"}
-                          nomeProjeto={'Backend de Login'}
-                          descricaoProjeto={'sistema de cadastro, login e autenticação'}
+                          nomeProjeto={t('backend')}
+                          descricaoProjeto={t('backD')}
                           linguagens={'Node.JS-MongoDb-Express'}
                           link={'https://github.com/aleksei-sousa/sistema-de-login'}
                       />

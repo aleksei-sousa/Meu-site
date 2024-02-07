@@ -1,6 +1,13 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import './cards.css'
+
+import { useTranslation } from 'react-i18next';
+import '../../locais/i18n'
+
 export default function Cards ({id, src, alt, nomeProjeto, descricaoProjeto, link, linguagens }) {
+
+  const { t } = useTranslation()
+
   const teste = false
     return(
         <div className="gradient_container" id={id}>
@@ -27,7 +34,7 @@ export default function Cards ({id, src, alt, nomeProjeto, descricaoProjeto, lin
                 <p>{descricaoProjeto}</p>
             </div>
             <div className="credito_projeto">
-              <div className="eu"><p>100% eu:</p></div>
+              <div className="eu"><p>100% {t('me')}:</p></div>
               <div className="ling_credito_projeto"><p>{linguagens}</p></div>
             </div>
           </div>

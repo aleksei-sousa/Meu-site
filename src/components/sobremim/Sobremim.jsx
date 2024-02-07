@@ -1,6 +1,13 @@
 import './sobremim.css'
 import euOlhando from '../../assets/eu_olhando3.png'
+
+import { useTranslation } from 'react-i18next';
+import '../locais/i18n'
+
 export default function SobreMim () {
+
+    const { t } = useTranslation()
+    
     return(
         <div id="sobremim" className="container-sobre-mim">
           <div id="sobre-mim" className="sobre-mim">
@@ -9,14 +16,14 @@ export default function SobreMim () {
               </div>
                 <div className="habilidades">
                   <div className="escolha-me">
-                        <div className="sobre">Sobre mim</div>
-                        <div className="subtitulo subtitulo-align-left sub1">Porque você deve me escolher!</div>
+                        <div className="sobre">{t('aboutMe')}</div>
+                        <div className="subtitulo subtitulo-align-left sub1">{t('chooseMe')}</div>
                   </div>
-                    <div className="descrevendo-me">Olá, meu nome é Aleksei Sousa, 24 anos, sou programador <b>Front End</b> e <b>designer</b>. Sou encantado pela área de tecnologia, e me encontrei na área da programação:</div>
+                    <div className="descrevendo-me">{t('euDet')}</div>
                     <div className="container-niveis">
                         <div className="niveis">
                             <div className="habilidade">
-                                <div className="nome-habilidade">Compromisso</div>
+                                <div className="nome-habilidade">{t('commitment')}</div>
                                 <div className="barra">
                                     <div className="barra-ativa" id="hab1">
                                         <div className="barra-verde"></div>
@@ -26,7 +33,7 @@ export default function SobreMim () {
                                 </div>
                             </div>
                             <div className="habilidade">
-                                <div className="nome-habilidade">Soluções no design e código</div>
+                                <div className="nome-habilidade">{t('solutions')}</div>
                                 <div className="barra">
                                     <div className="barra-ativa" id="hab2">
                                         <div className="barra-verde"></div>
@@ -36,7 +43,7 @@ export default function SobreMim () {
                                 </div>
                             </div>
                             <div className="habilidade">
-                                <div className="nome-habilidade">Criatividade</div>
+                                <div className="nome-habilidade">{t('creativity')}</div>
                                 <div className="barra">
                                     <div className="barra-ativa" id="hab3">
                                         <div className="barra-verde"></div>
@@ -46,7 +53,7 @@ export default function SobreMim () {
                                 </div>
                             </div>
                             <div className="habilidade">
-                                <div className="nome-habilidade">Disponibilidade p/ qualquer dúvida</div>
+                                <div className="nome-habilidade">{t('availability')}</div>
                                 <div className="barra">
                                     <div className="barra-ativa" id="hab4">
                                         <div className="barra-verde"></div>

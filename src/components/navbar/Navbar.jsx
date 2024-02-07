@@ -1,23 +1,44 @@
 import styles from './navbar.module.css'
 import { useState } from 'react'
 import './navbar.css'
-import stylesM from '../main/main.module.css'
 
 import { MdHome } from "react-icons/md";
 import { MdEmojiPeople } from "react-icons/md";
 import { RiFoldersFill } from "react-icons/ri";
 import { GrTechnology } from "react-icons/gr";
 
+import { MdOutlineTranslate } from "react-icons/md";
+
+import { useTranslation } from 'react-i18next';
+import '../locais/i18n'
+
 export default function Navbar ({navbar, sidebar, setSidebar}) {
 
+const [selecti, setSelecti] = useState('')
+const { t, i18n} = useTranslation()
+
+//i18n.changeLanguage('pt')
+
 function side () {  
-const tamanho = window.innerWidth
-if (tamanho<=790){
-  setSidebar(!sidebar)
+  const tamanho = window.innerWidth
+    if (tamanho<=790){
+      setSidebar(!sidebar)
+    }
 }
+
+function idiomaChange (e) {
+  const valor = e.value
+  console.log(valor)
+  //setIdioma(valor)
+  i18n.changeLanguage(valor)
 }
-//${styles.content_h}
-//home, tech, 
+
+function teste2 (e) {
+  console.log(e)
+  idiomaChange(e)
+  setSelecti(`${styles.c_select_disappear}`)
+}
+
     return(
       <header className={navbar ? styles.h_ativo: ''}>
 
@@ -30,7 +51,7 @@ if (tamanho<=790){
           </button>
         </li>
         <li><a className={styles.link} href="#inicio" onClick={side}>
-          <p>Início</p>
+          <p>{t('home')}</p>
           {/* <CiHome
            size={30}
           /> */}
@@ -39,23 +60,32 @@ if (tamanho<=790){
            />
         </a></li>
         <li><a className={styles.link} href="#sobremim" onClick={side}>
-        <p>Sobre mim</p>
+        <p>{t('aboutMe')}</p>
           <MdEmojiPeople
             size={25}
            />
           </a></li>
         <li><a className={styles.link} href="#projetos" onClick={side}>
-        <p>Projetos</p>
+        <p>{t('projects')}</p>
           <RiFoldersFill
             size={22}
            />
           </a></li>
         <li><a className={styles.link} href="#tecnologias" onClick={side}>
-        <p>Tecnologias</p>
+        <p>{t('technologies')}</p>
           <GrTechnology
             size={22}
            />
           </a></li>
+          <li>
+          <div className={`${styles.c_select} ${styles.c_select3}`}>
+                <MdOutlineTranslate color='black' className={styles.translate_icon}/>
+              <select className={`${styles.select} ${styles.c_select3}`} onChange={(e)=>teste2(e.target)}>
+                <option value="en">En</option>
+                <option value="pt">PT</option>
+              </select>
+            </div>
+          </li>
       </ul>
 
 
@@ -65,7 +95,20 @@ if (tamanho<=790){
         `${sidebar ? `${styles.content_h} ${styles.content_filter} `:
           `${styles.content_h} ` }}  `}>
           {/* <div className={styles.logo}>- DESENVOLVEDOR -</div> */}
-          <a href='#inicio' className={!navbar? `${styles.logo_ativo} ${styles.logo}` : `${styles.logo_desativo} ${styles.logo}` }>- DESENVOLVEDOR -</a>
+          <a href='#inicio' className={!navbar? `${styles.logo_ativo} ${styles.logo}` : `${styles.logo_desativo} ${styles.logo}` }>{t('developer')}</a>
+
+
+          <div className={`${selecti} ${styles.c_select} ${styles.c_select_appear}`}>
+              <MdOutlineTranslate className={styles.translate_icon} color='white'/>
+              <select className={styles.select} /*onChange={(e)=>{teste(e.target)}}*/
+                onChange={(e)=>teste2(e.target)}
+              >
+                <option value="en">En</option>
+                <option value="pt">PT</option>
+              </select>
+            </div>
+
+
           <button onClick={side} className={styles.menu_hamburguer1}>
                 <div className={styles.row1}></div>
                 <div className={styles.row2}></div>
@@ -79,10 +122,17 @@ if (tamanho<=790){
                 <div className={styles.row3}></div>
               </button>
             </li>
-            <li><a className={styles.link} href="#inicio" onClick={side}>Início</a></li>
-            <li><a className={styles.link} href="#sobremim" onClick={side}>Sobre mim</a></li>
-            <li><a className={styles.link} href="#projetos" onClick={side}>Projetos</a></li>
-            <li><a className={styles.link} href="#tecnologias" onClick={side}>Tecnologias</a></li>
+            <li><a className={styles.link} href="#inicio" onClick={side}>{t('home')}</a></li>
+            <li><a className={styles.link} href="#sobremim" onClick={side}>{t('aboutMe')}</a></li>
+            <li><a className={styles.link} href="#projetos" onClick={side}>{t('projects')}</a></li>
+            <li><a className={styles.link} href="#tecnologias" onClick={side}>{t('technologies')}</a></li>
+            <li><div className={styles.c_select}>
+                <MdOutlineTranslate className={styles.translate_icon}/>
+              <select className={styles.select} onChange={(e)=>{idiomaChange(e.target)}}>
+                <option value="en">En</option>
+                <option value="pt">PT</option>
+              </select>
+            </div></li>
           </ul>
         </div>
       </header>

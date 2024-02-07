@@ -1,0 +1,52 @@
+{
+    "developer": "- DESENVOLVEDOR -",
+    "home": "Início",
+    "aboutMe": "Sobre Mim",
+    "projects": "Projetos",
+    "technologies": "Tecnologias",
+
+
+    "hi": "Olá, meu nome é",
+    "dev": "Desenvolvedor Front-End",
+    "devDet": "Desenvolvedor React js e Node Js, com conhecimento em Design gráfico.",
+    "more": "mais",
+
+
+    "chooseMe": "Porque você deve me escolher!!",
+    "euDet": "Olá, meu nome é Aleksei Sousa, 24 anos, sou programador Front End e designer. Sou encantado pela área de tecnologia, e me encontrei na área da programação. Qualidades:",
+    "commitment": "commitment",
+    "solutions": "Soluções no design e código",
+    "creativity": "Criatividade",
+    "availability": "Disponibilidade p/ qualquer dúvida",
+
+
+    "projectsT": "PROJETOS",
+    "calculator": "Calculadora",
+    "calD": "Uma calculadora com todas as funcionalidades de uma do Android",
+    "lanD": "Meu primerio Projeto, ainda em HTML e CSS",
+    "netD": "Um site clone, com todo design e responsividade do original",
+    "backend": "Backend - Login",
+    "backD": "Sistema de cadastro, login e autenticação",
+    "priD": "No meu início, queria entender o display Grid",
+    "formulario": "Formulário",
+    "forD": "Formulário React.js com uma animação",
+    "meusite": "Meu Site",
+    "meuD": "Refiz meu site, resolvi fazer com React Js",
+    "me": "eu",
+
+
+    "technologiesT": "TECNOLOGIAS",
+
+    "React": "React faz com que a criação de UIs interativas seja uma tarefa fácil. Crie views simples para cada estado na sua aplicação, e o React irá atualizar e renderizar de forma eficiente apenas os componentes necessários na medida em que os dados mudam.",
+    "Node": "Node.js é um ambiente de execução do código JavaScript do lado servidor (server side)",
+    "Javascript" :"O JavaScript possui grande foco no Front-end (client side), ou seja, é comumente utilizada para rodar no “lado cliente” da aplicação.",
+    "Mysql": "MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. O MySQL é uma escolha popular para sites, blogs, lojas online e sistemas de gerenciamento de conteúdo (CMS)",
+    "Mongo": "Mongo DB é um sistema de gerenciamento de banco de dados (DBMS) não relacional, baseado em software livre, que utiliza documentos flexíveis em vez de tabelas e linhas para processar e armazenar várias formas de dados.",
+    "Api": "Às vezes, APIs são descritas como um contrato entre um provedor e um usuário de informações, estabelecendo o conteúdo exigido pelo consumidor (a chamada) e o conteúdo exigido pelo produtor (a resposta).",
+    "Html": "A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online.",
+    "Css": "CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML.",
+    "Figma": "Figma é uma ferramenta de design criada com o objetivo de tornar a prática do design mais acessível.",
+    "Photoshop": "Photoshop é usado para edição de imagens, criação de arte digital, design gráfico e animações.",
+    "CorelDraw": "CorelDRAW é um software desenvolvido para possibilitar a criação dos mais variados produtos de comunicação visual, como desenhos, folders, retoques em fotografias, entre outros,"
+
+}
