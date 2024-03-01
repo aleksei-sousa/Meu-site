@@ -22,6 +22,7 @@ export default function SobreMim () {
                     <div className="descrevendo-me">{t('euDet')}</div>
                     <div className="container-niveis">
                         <div className="niveis">
+                            
                             <div className="habilidade">
                                 <div className="nome-habilidade">{t('commitment')}</div>
                                 <div className="barra">
@@ -32,6 +33,7 @@ export default function SobreMim () {
                                     <div className="barra-cinza"></div>
                                 </div>
                             </div>
+
                             <div className="habilidade">
                                 <div className="nome-habilidade">{t('solutions')}</div>
                                 <div className="barra">
@@ -42,6 +44,7 @@ export default function SobreMim () {
                                     <div className="barra-cinza"></div>
                                 </div>
                             </div>
+
                             <div className="habilidade">
                                 <div className="nome-habilidade">{t('creativity')}</div>
                                 <div className="barra">
@@ -52,6 +55,7 @@ export default function SobreMim () {
                                     <div className="barra-cinza"></div>
                                 </div>
                             </div>
+
                             <div className="habilidade">
                                 <div className="nome-habilidade">{t('availability')}</div>
                                 <div className="barra">
@@ -62,6 +66,7 @@ export default function SobreMim () {
                                     <div className="barra-cinza"></div>
                                 </div>
                             </div>
+
                   </div>
                 </div>
               </div>

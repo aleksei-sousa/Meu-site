@@ -4,6 +4,8 @@ import 'react-slideshow-image/dist/styles.css';
 import styles from './projetos.module.css'
 import Cards from './cards_projetos/Cards'
 
+//import sr from '../../utils/scrollReaveal/ScrollReaveal'
+
 import { useTranslation } from 'react-i18next';
 import '../locais/i18n'
 
@@ -14,6 +16,7 @@ import img_4 from './img/img_port.png';
 import img_5 from './img/img_landing.png';
 import img_6 from './img/img_pricegrid.png';
 import img_7 from './img/sistema_de_login.png';
+import img_8 from './img/mapa.jpg';
 
 const responsiveSettings = [
     {
@@ -36,14 +39,32 @@ export default function Projetos () {
 
     const { t } = useTranslation()
 
+    // sr.reveal('#projetos', {
+    //     distance: '150%',
+    //     origin: 'left',
+    //     opacity: null,
+    //     duration: 1000,
+    //     reset: true
+    //  })     
+     //document.onscroll = function() { console.log('scrawwwwl'); };
+
     return(
         <div className={styles.container_projetos} id='projetos'>
             <div className={styles.subtitulo_central}>
               <h1 className={`${styles.texto_sub} ${styles.sub2}`}>{t('projectsT')}</h1>
             </div>
-            <div className={styles.destaque_projetos}>
-                <div className={styles.content_projetos}>
+            <div className={`${styles.destaque_projetos}`}>
+                <div className={styles.content_projetos} id='content_projetos'>
                     <Slide slidesToShow={1} slidesToScroll={1} arrows={false} autoplay={true} indicators={true} transitionDuration={700} duration={2000}  responsive={responsiveSettings}>
+                    <Cards
+                          id ={'mapa'}
+                          src = {img_8}
+                          alt ={"imagem mostra os varios mapas disponíveis"}
+                          nomeProjeto={t('Map')}
+                          descricaoProjeto={t('mapD')}
+                          //link={'https://aleksei-sousa.github.io/calculadora/'}
+                          linguagens={'React-Node-Mongo'}
+                      />
                       <Cards
                           id ={'calc'}
                           src = {img_1}

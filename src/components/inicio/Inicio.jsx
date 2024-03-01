@@ -12,12 +12,11 @@ export default function Inicio () {
           <div className={styles.texto_apresentacao}>
             <div className={styles.content_apresentacao}>
 
-              <div className={styles.ola}>{t('hi')}</div>
-              <div className={styles.meu_nome}><h1>Aleksei Sousa</h1></div>
-              <div className={styles.desenvolvedor}><h2>{t('dev')}</h2></div>
-              <div className={styles.auto_descricao}><p>{t('devDet')}</p></div>
-              <a href="#sobre-mim" className={styles.btn_mais}>{t('more')}</a>
-              
+              <div className={styles.ola} id='ola'>{t('hi')}</div>
+              <div className={styles.meu_nome} id='meu_nome'><h1>Aleksei Sousa</h1></div>
+              <div className={styles.desenvolvedor} id='desenvolvedor'><h2>{t('dev')}</h2></div>
+              <div className={styles.auto_descricao} id='auto_descricao'><p>{t('devDet')}</p></div>
+              <div  id='btn_mais'><a href="#sobre-mim" className={styles.btn_mais}>{t('more')}</a></div>
             </div>
           </div>
           <img className={styles.minha_foto} src={eu} alt="" />

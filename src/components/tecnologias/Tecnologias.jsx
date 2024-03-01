@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import GridCard from './GridCard/GridCard'
 import styles from './tecnologias.module.css'
 import caixa from './img/caixa_titulo_icone2.png'
-
+//import sr from '../../utils/scrollReaveal/ScrollReaveal'
 import { useTranslation } from 'react-i18next';
 import '../locais/i18n'
 
@@ -24,10 +24,6 @@ export default function Tecnologias (){
     //console.log(textoss[icone])
   }, [icone])
 
-
-
-
-
     return(
       <div className={styles.tecnologias_container} id='tecnologias'>
           <div className={styles.tecnologias_content}>
@@ -36,7 +32,7 @@ export default function Tecnologias (){
             </div>
             {/* <a className={styles.link_lista} href=''>Lista completa</a> */}
 
-            <div className={styles.tecnologias_cards}>
+            <div className={styles.tecnologias_cards} id='tecnologias_cards'>
               <GridCard setTexto={setTexto} setIcone={setIcone} />
 
               <div className={styles.exibicao_cards}>

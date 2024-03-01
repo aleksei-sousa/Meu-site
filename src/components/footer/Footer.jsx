@@ -1,4 +1,5 @@
 import styles from './footer.module.css'
+import { useEffect } from 'react';
 
 import {FaLinkedin, FaWhatsappSquare, FaInstagramSquare, FaPhoneSquare, FaGithubSquare,  FaFacebookF, FaInstagram, FaWhatsapp, FaPhone, FaGithub  } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -34,6 +35,9 @@ export default function Footer ({sidebar, setSidebar}) {
     const alert = (msg) => {
         window.alert(msg)
     }
+
+
+
     return(
         <footer className={sidebar ? `${styles.filter}`:``} onClick={ss}>
             <div className={styles.container_footer}>
