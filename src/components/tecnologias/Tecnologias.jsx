@@ -1,39 +1,65 @@
 import { useState, useEffect } from 'react'
-import GridCard from './GridCard/GridCard'
+import BtnColmeia from './btn/BtnColmeia'
+import ColmeiaFront from './Colmeia/ColmeiaFront'
+import ColmeiaBack from './Colmeia/ColmeiaBack'
+import BoxTech from './box-tech/BoxTech'
 import styles from './tecnologias.module.css'
-import caixa from './img/caixa_titulo_icone2.png'
+import styles2 from './Colmeia/colmeia.module.css'
+
+
 //import sr from '../../utils/scrollReaveal/ScrollReaveal'
 import { useTranslation } from 'react-i18next';
 import '../locais/i18n'
 
+
 const javascript = '/src/components/tecnologias/img/javascript.png'
 import React from './img/react.png'
+import front from './Colmeia/img/front.png'
+import back from './Colmeia/img/back.png'
+import backCircle from './Colmeia/img/back-Circle.png'
+import frontCircle from './Colmeia/img/front-Circle.png'
 //import Node from './img/nodejs.png'
+
+
 
 
 export default function Tecnologias (){
   
   const { t } = useTranslation()
 
-  const [icone, setIcone] = useState('React')
+  const [icone, setIcone] = useState(false)
   const [texto, setTexto] = useState('React')
-
+  const [paper1, setPaper1] = useState(false)
+  const [ColmeiaBtn, setColmeiaBtn] = useState(false)
+  //console.log(icone)
   useEffect(() => {
-    console.log(icone)
+    //console.log(icone)
     const strIcone = icone
-    //console.log(textoss[icone])
   }, [icone])
 
+  const fadePaper = (e) =>{
+    const elemento = e.target
+    const classe = styles2.colmeia
+
+    if(elemento.classList[1] == classe){
+      return
+    }
+    setIcone(false)
+  }
+
+
+
     return(
-      <div className={styles.tecnologias_container} id='tecnologias'>
+      <div className={styles.tecnologias_container} id='tecnologias'
+      onClick={(e)=>fadePaper(e)}>
           <div className={styles.tecnologias_content}>
             <div className={styles.subtitulo_central}>
               <h1 className={`${styles.texto_sub} ${styles.sub2}`}>{t('technologiesT')}</h1>
             </div>
             {/* <a className={styles.link_lista} href=''>Lista completa</a> */}
 
-            <div className={styles.tecnologias_cards} id='tecnologias_cards'>
-              <GridCard setTexto={setTexto} setIcone={setIcone} />
+            <div className={styles.tecnologias_cards} id='tecnologias_cards' >
+              {/* <GridCard setTexto={setTexto} setIcone={setIcone} />
 
               <div className={styles.exibicao_cards}>
                   <div className={styles.container_caixa}>
@@ -47,7 +73,20 @@ export default function Tecnologias (){
                 <div className={styles.descricao_card}>
                   {t(`${icone}`)}
                 </div>
-              </div>
+              </div> */}
+
+              <BtnColmeia setColmeiaBtn={setColmeiaBtn} ColmeiaBtn={ColmeiaBtn} />
+              <ColmeiaFront
+                setPaper1={setPaper1}setTexto={setTexto}
+                setIcone={setIcone} icone={icone} ColmeiaBtn={ColmeiaBtn}
+              />
+              
+              <BoxTech paper1={paper1} icone={icone} texto={texto}/>
+
+              <ColmeiaBack setPaper1={setPaper1} setTexto={setTexto}
+              setIcone={setIcone} icone={icone} ColmeiaBtn={ColmeiaBtn}
+              />
+
             </div>
           </div>
       </div>

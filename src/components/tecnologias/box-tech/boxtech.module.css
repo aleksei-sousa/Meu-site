@@ -1,0 +1,174 @@
+.container_caixa{
+    order: 3;
+    position: absolute;
+    width: 83%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    min-height: 232px;
+}
+.caixa_background{
+    position: relative;
+    left: 50%;
+    top: 22px;
+    transform: translateX(-50%);
+    display: flex;
+    overflow: hidden;
+    width: 20%;
+    height: 200px;
+}
+.content_icon{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    top: -320px;
+    position: inherit;
+    transition: .1s;
+    background-image: url('./bandeira.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.content_icon_ativo{
+    margin: auto;
+    /* top: 0px; */
+    position: inherit;
+    animation: bandeira 1s forwards;
+}
+.img_icon{
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+@keyframes bandeira {
+    0%{
+        top: -320px; 
+    }
+    25%{
+        top: -320px; 
+    }
+    100%{
+        top: -2px;
+    }
+}
+.caixa_vars{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* position: absolute;
+    width: 92%;
+    justify-content: space-between;
+    top: 4%;
+    right: 9px;
+    height: 75px;
+    align-items: center; */
+}
+.caixa_texto{
+    color: white;
+    width: 54%;
+    text-align: center;
+    font-family: 'Odor Mean Chey', serif;
+    margin: auto;
+    font-size: 41px;
+}
+
+.caixa_icone{
+    width: 40px;
+    height: 40px;
+    padding: 16px 16px 16px 34px;
+}
+.descricao_card{
+    color: white;
+    background-color: aliceblue;
+    max-width: 295px;
+    width: 100%;
+    position: absolute;
+    top: 89px;
+    z-index: -3;
+    left: 50%;
+    transform: translateX(-48%);
+    padding: 47px 20px 20px 20px;
+}
+.traco{
+    width: 6px;
+    height: 103px;
+    background-color: #f58634;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.pergaminho{
+    width: 100%;
+    background-color: white;
+    height: 87px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    left: -991px;
+    transition: .3s;
+    /* box-shadow: inset  0 0 0 6px red; */
+}
+.pergaminho_ativo{
+    left: 0;
+    transition: .3s;
+}
+.pergaminho_texto{
+    padding: 18px;
+    font-family: Bahnschrift;
+    font-size: 17px;
+    font-weight: 500;
+}
+.pergaminho_pedaco{
+    background-color: white;
+    width: 40px;
+    height: 87px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    left: -40px;
+    transition: .3s;
+}
+.pergaminho_pedaco_ativo{
+    transition: .3s;
+    left: -20px;
+}
+@media screen and (max-width: 1200px) {
+    
+    .container_front{
+
+    }
+    .img_icon{
+        top: 53%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .pergaminho_texto{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container_caixa{
+        position: relative;
+    }
+    .content_icon{
+        transform: translatey(-6%);
+    }
+}
+@media screen and (max-width: 600px) {
+    .container_caixa{
+        position: relative;
+    }
+    .content_icon{
+        transform: translatey(-8%);
+    }
+}

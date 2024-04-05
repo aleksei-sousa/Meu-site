@@ -1,18 +1,6 @@
 import styles from './GridCard.module.css'
 
 
-// import react from './img/react_icone.png'
-// import nodejs from './img/nodejs_icone.png'
-// import js from './img/javascript_icone.png'
-// import mysql from './img/mysql_icone.png'
-// import corel from './img/corel_icone.png'
-// import ps from './img/photoshop_icone.png'
-// import css from './img/css_icone.png'
-// import mongodb from './img/mongodb_icone.png'
-// import figma from './img/figma_icone.png'
-// import html from './img/html_icone.png'
-// import api from './img/api_icone.png'
-
 import react from './img/react.png'
 import nodejs from './img/nodejs.png'
 import js from './img/js.png'
