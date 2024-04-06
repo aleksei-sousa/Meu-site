@@ -27,7 +27,7 @@ export default function Tecnologias (){
   
   const { t } = useTranslation()
 
-  const [icone, setIcone] = useState(false)
+  const [icone, setIcone] = useState('Back')
   const [texto, setTexto] = useState('React')
   const [paper1, setPaper1] = useState(false)
   const [ColmeiaBtn, setColmeiaBtn] = useState(false)
@@ -75,7 +75,7 @@ export default function Tecnologias (){
                 </div>
               </div> */}
 
-              <BtnColmeia setColmeiaBtn={setColmeiaBtn} ColmeiaBtn={ColmeiaBtn} />
+              <BtnColmeia setColmeiaBtn={setColmeiaBtn} ColmeiaBtn={ColmeiaBtn} setIcone={setIcone} icone={icone} />
               <ColmeiaFront
                 setPaper1={setPaper1}setTexto={setTexto}
                 setIcone={setIcone} icone={icone} ColmeiaBtn={ColmeiaBtn}
@@ -83,8 +83,9 @@ export default function Tecnologias (){
               
               <BoxTech paper1={paper1} icone={icone} texto={texto}/>
 
-              <ColmeiaBack setPaper1={setPaper1} setTexto={setTexto}
-              setIcone={setIcone} icone={icone} ColmeiaBtn={ColmeiaBtn}
+              <ColmeiaBack
+                setPaper1={setPaper1} setTexto={setTexto}
+                setIcone={setIcone} icone={icone} ColmeiaBtn={ColmeiaBtn}
               />
 
             </div>

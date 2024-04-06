@@ -21,6 +21,7 @@
 .container_back, .container_front{
     display: block;
     margin: 130px 0 0 0;
+    max-width: 406px;
 }
 .c1{
     display: flex;
@@ -154,17 +155,17 @@
 
 @media screen and (max-width:500px) {
     .container_back, .container_front{
-        top: 253px;
+        top: 253px; 
     }
 }
-@media screen and (max-width: 370px) {
-    .c2, .c3, .c4{
-        display: none;
-    }
+@media screen and (max-width: 380px) {
     .imgfront{
         width: 80%;
     }
     .imgback{
         width: 80%;
+    }
+    .container_back, .container_front{
+        top: 214px;
     }
 }

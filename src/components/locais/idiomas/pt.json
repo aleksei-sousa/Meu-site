@@ -7,7 +7,7 @@
 
 
     "hi": "Olá, meu nome é",
-    "dev": "Desenvolvedor Front-End",
+    "dev": "Desenvolvedor Full Stack",
     "devDet": "Desenvolvedor React js e Node Js, com conhecimento em Design gráfico.",
     "more": "mais",
 
@@ -37,13 +37,13 @@
 
 
     "technologiesT": "TECNOLOGIAS",
-    "Front": "o Front-end compreende a parte visual de sites e aplicações. Ou seja, a área das páginas em que as pessoas podem interagir.",
-    "back": "O back-end trabalha na parte de “trás” da aplicação. Ele é o responsável, em termos gerais, pela implementação da regra de negócio.",
+    "Front": "O Front-end compreende a parte visual de sites e aplicações. Ou seja, a área das páginas em que as pessoas podem interagir.",
+    "Back": "O back-end trabalha na parte de “trás” da aplicação. Ele é o responsável, em termos gerais, pela implementação da regra de negócio.",
     "Git":"O Git é responsável por guardar o histórico de alterações sempre que alguém modificar algum arquivo que está sendo monitorado por ele.",
     "Insomnia": "Insomnia é um framework Open Source para desenvolvimento/teste de API Clients.",
     "Postman": "O Postman é um API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs.",
 
-    "React": "React faz com que a criação de UIs interativas seja uma tarefa fácil. Ele irá atualizar e renderizar de forma eficiente apenas os componentes necessários na medida em que os dados mudam.",
+    "React": "React.Js faz com que a criação de UIs interativas seja uma tarefa fácil. Ele irá atualizar e renderizar de forma eficiente apenas os componentes necessários na medida em que os dados mudam.",
     "Node": "Node.js é um ambiente de execução do código JavaScript do lado servidor (server side)",
     "Javascript" :"O JavaScript possui grande foco no Front-end (client side), ou seja, é comumente utilizada para rodar no “lado cliente” da aplicação.",
     "Mysql": "MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL como interface. O MySQL é uma escolha popular para sites, blogs, lojas online e outros.",

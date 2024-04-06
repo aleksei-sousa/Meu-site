@@ -8,13 +8,16 @@ function fadePaper (setPaper1) {
 
 function showMsg (e, setIcone, icone) {
 
-    const setar =(id)=>{
+    const setar = (id) => {
+        //console.log(id)
         console.log('adicionar')
         setIcone(id)
     }
 
     function controlSet (nome) {
-        const id = e.target.id
+        //const id = e.target.id
+        //console.log(icone)
+
         if(icone){
             console.log('retirar')
             setIcone(false)
@@ -22,10 +25,15 @@ function showMsg (e, setIcone, icone) {
                 setar(nome);
             }, 300);
         } else {
+            //console.log('ok')
+            //console.log(nome)
             setIcone(nome)
         }
     }
-    
+    //console.log(e.target)
+
+    if(e.target){
+        console.log(1)
     let primeiroEspaço = e.target.id.indexOf(' ')
     console.log(primeiroEspaço)
            if(!(primeiroEspaço == -1)){
@@ -38,7 +46,10 @@ function showMsg (e, setIcone, icone) {
                 console.log(e.target.id)
              controlSet(e.target.id)
            }
-
+    } else {
+        console.log(e.id)
+        controlSet(e.id)
+    }
 
 
     }

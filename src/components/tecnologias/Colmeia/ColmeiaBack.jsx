@@ -27,7 +27,7 @@ export default function ColmeiaBack ({setPaper1, setTexto, setIcone, icone, Colm
                 className={`${styles.imgback} ${styles.colmeia}`}
                 src={back}
                 alt="icone da tecnologia"
-                id='back'
+                id='Back'
                 onMouseOut={showPaper}
                 onMouseOver={fadePaper}
                 onClick={(e)=>colmeiaEvents.showMsg(e, setIcone, icone)}

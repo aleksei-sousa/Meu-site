@@ -21,8 +21,7 @@
     justify-content: space-between;
     background: #69341D;
     border-radius: 41px;
-    padding: 60px 80px;
-
+    padding: 60px 97px;
     flex-direction: row;
     gap: 0;
 
@@ -233,7 +232,7 @@
         padding-top: 65px;
         padding: 65px 0 0 0;
         height: 886px;
-        overflow: hidden;
+        overflow: hidden ;
     }
     .container_front{
         left: -440px;
@@ -245,6 +244,7 @@
     .tecnologias_cards{
         gap: 11px;
         height: 782px;
+
     }
     .border{
         height: 180px;
@@ -264,9 +264,10 @@
         bottom: 69%;
     }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 380px) {
     .tecnologias_cards{
         gap: 16px;
+        height: 657px;
     }
     .border{
         height: 140px;

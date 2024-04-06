@@ -6,7 +6,7 @@
     "technologies": "Technologies",
 
     "hi": "Hi my name is",
-    "dev": "Front End Developer",
+    "dev": "Full Stack Developer",
     "devDet": "React js and Node Js developer, with knowledge in Graphic Design.",
     "more": "more",
 
@@ -34,11 +34,11 @@
 
     "technologiesT": "TECHNOLOGIES",
     "Front": "Front-end comprises the visual part of websites and applications. In other words, the area of ​​the pages where people can interact.",
-    "back": "The back-end works at the “back” of the application. He is responsible, in general terms, for implementing the business rule.",
+    "Back": "The back-end works at the “back” of the application. He is responsible, in general terms, for implementing the business rule.",
     "Git":"Git is responsible for saving the change history whenever someone modifies a file that is being monitored by it.",
     "Insomnia": "Insomnia is an Open Source framework for developing/testing API Clients.",
     "Postman": "Postman is an API Client that makes it easy for developers to create, share, test, and document APIs.",
-    "React": "React makes creating interactive UIs an easy task. It will efficiently update and render only the necessary components as the data changes.",
+    "React": "React.Js makes creating interactive UIs an easy task. It will efficiently update and render only the necessary components as the data changes.",
     "Node": "Node.js is a server-side JavaScript code execution environment",
     "Javascript" :"JavaScript has a strong focus on the Front-end (client side), that is, it is commonly used to run on the “client side” of the application.",
     "Mysql": "MySQL is a database management system that uses the SQL language as an interface. MySQL is a popular choice for websites, blogs, online stores, and content management systems (CMS)",
