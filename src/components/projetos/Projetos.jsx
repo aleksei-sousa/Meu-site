@@ -105,7 +105,7 @@ export default function Projetos () {
                           src = {img_Market}
                           alt ={"App Market Place"}
                           nomeProjeto={'App Market Place'}
-                          descricaoProjeto={t('priD')}
+                          descricaoProjeto={t('MarketD')}
                           linguagens={'React-Native'}
                           link={`https://github.com/aleksei-sousa/MarketPlaceNative`}
                       />

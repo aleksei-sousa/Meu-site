@@ -4,10 +4,7 @@ import Main from './components/main/Main'
 import Footer from './components/footer/Footer'
 import { useEffect, useState } from 'react';
 const cardsSlide = document.querySelector('.gradient_container')
-//import sr from './utils/scrollReaveal/ScrollReaveal'
 import Revelar from './helpers/scrollReveal/scrollreveal'
-import Redimensionar from './helpers/scrollWidth/redimensionar';
-console.log(cardsSlide)
 
 function App() {
 
