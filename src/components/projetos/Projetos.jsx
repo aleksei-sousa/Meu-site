@@ -17,6 +17,7 @@ import img_5 from './img/img_landing.png';
 import img_6 from './img/img_pricegrid.png';
 import img_7 from './img/sistema_de_login.png';
 import img_8 from './img/mapa.jpg';
+import img_Market from './img/market_app.jpg';
 
 const responsiveSettings = [
     {
@@ -39,15 +40,6 @@ export default function Projetos () {
 
     const { t } = useTranslation()
 
-    // sr.reveal('#projetos', {
-    //     distance: '150%',
-    //     origin: 'left',
-    //     opacity: null,
-    //     duration: 1000,
-    //     reset: true
-    //  })     
-     //document.onscroll = function() { console.log('scrawwwwl'); };
-
     return(
         <div className={styles.container_projetos} id='projetos'>
             <div className={styles.subtitulo_central}>
@@ -55,7 +47,7 @@ export default function Projetos () {
             </div>
             <div className={`${styles.destaque_projetos}`}>
                 <div className={styles.content_projetos} id='content_projetos'>
-                    <Slide slidesToShow={1} slidesToScroll={1} arrows={false} autoplay={true} indicators={true} transitionDuration={700} duration={2000}  responsive={responsiveSettings}>
+                    <Slide slidesToShow={1} slidesToScroll={1} arrows={true} autoplay={false} indicators={true} transitionDuration={700} duration={2000}  responsive={responsiveSettings}>
                     <Cards
                           id ={'mapa'}
                           src = {img_8}
@@ -107,6 +99,15 @@ export default function Projetos () {
                           nomeProjeto={'Landing Page'}
                           descricaoProjeto={t('lanD')}
                           linguagens={'Html-Css-Jquery'}
+                      />
+                      <Cards
+                          id ={'market'}
+                          src = {img_Market}
+                          alt ={"App Market Place"}
+                          nomeProjeto={'App Market Place'}
+                          descricaoProjeto={t('priD')}
+                          linguagens={'React-Native'}
+                          link={`https://github.com/aleksei-sousa/MarketPlaceNative`}
                       />
                       <Cards
                           id ={'price'}
